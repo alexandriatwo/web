@@ -17,7 +17,7 @@ const Bloglist = () => {
           id="twitter_timeline-3"
           className="widget widget_twitter_timeline"
         >
-          <h2 className="widget-title">Our Blog List</h2>
+          <h2 className="widget-title wow fadeInUp animated" data-wow-duration="1000ms" data-wow-delay="600ms">Our Blog List</h2>
           <ul className="list-unstyled">
             {isLoading && <p>Loading...</p>}
 
@@ -25,26 +25,14 @@ const Bloglist = () => {
               !isError &&
               blogListData.map(({ id, date, title: { rendered }, link }) => {
                 return (
-                  <li className="has-post-thumbnail" key={id}>
+                  <li className="has-post-thumbnail wow fadeInUp animated" data-wow-duration="1000ms" data-wow-delay="600ms" key={id}>
                     <div className="postlist-thumbnail">
-                      <a href="https://alexandria2.live/2021/08/01/the-archetypes-and-the-collective-unconscious/">
+                      <a href={link}>
                         <img
-                          src="https://alexandriatwo.files.wordpress.com/2021/08/download-23.jpg?w=150&amp;h=150&amp;crop=1"
+                          src="https://alexandriatwo.files.wordpress.com/2021/01/learn.png?w=100&h=100&crop=1"
                           className="img-postlist img-responsive wp-post-image"
                           alt=""
                           loading="lazy"
-                          data-attachment-id="1268"
-                          data-permalink="https://alexandria2.live/download-23/"
-                          data-orig-file="https://alexandriatwo.files.wordpress.com/2021/08/download-23.jpg"
-                          data-orig-size="269,400"
-                          data-comments-opened="1"
-                          data-image-meta='{"aperture":"0","credit":"","camera":"","caption":"","created_timestamp":"0","copyright":"","focal_length":"0","iso":"0","shutter_speed":"0","title":"","orientation":"0"}'
-                          data-image-title="Archetypes and the Collective Unconscious"
-                          data-image-description="&lt;p&gt;https://alexandriatwo.files.wordpress.com/2021/08/c.-g.-jung-collected-works-volume-9i_-the-archetypes-of-the-collective-unconscious.pdf&lt;/p&gt;
-                                                "
-                          data-image-caption=""
-                          data-medium-file="https://alexandriatwo.files.wordpress.com/2021/08/download-23.jpg?w=202"
-                          data-large-file="https://alexandriatwo.files.wordpress.com/2021/08/download-23.jpg?w=269"
                         />
                       </a>
                     </div>
