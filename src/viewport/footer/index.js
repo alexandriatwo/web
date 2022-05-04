@@ -20,9 +20,9 @@ const Footer = () => {
                 id="twitter_timeline-1"
                 className="widget widget_twitter_timeline"
               >
-                <h2 className="widget-title">Follow me on Twitter</h2>
+                <h2 className="widget-title wow fadeInUp animated" data-wow-duration="1000ms" data-wow-delay="600ms">Follow me on Twitter</h2>
                 <a
-                  className="twitter-timeline"
+                  className="twitter-timeline wow fadeInUp animated" data-wow-duration="1000ms" data-wow-delay="600ms"
                   data-width="250"
                   data-height="260"
                   data-theme="light"
@@ -50,11 +50,11 @@ const Footer = () => {
                 id="twitter_timeline-3"
                 className="widget widget_twitter_timeline"
               >
-                <h2 className="widget-title">Follow Us</h2>
+                <h2 className="widget-title wow fadeInUp animated" data-wow-duration="1000ms" data-wow-delay="600ms">Follow Us</h2>
                 <div className="site-social-menu">
                   <ul
                     id="menu-social"
-                    className="social-menu list-unstyled d-flex"
+                    className="social-menu list-unstyled d-flex wow fadeInUp animated" data-wow-duration="1000ms" data-wow-delay="600ms"
                   >
                     <li className="menu-item">
                       <a
@@ -99,10 +99,10 @@ const Footer = () => {
                     </li>
                   </ul>
                 </div>
-                <h2 className="widget-title">Quick Links</h2>
+                <h2 className="widget-title wow fadeInUp animated" data-wow-duration="1000ms" data-wow-delay="600ms">Quick Links</h2>
                 <div className="site-secondary-menu">
                   <ul id="menu-footer" className="secondary-menu list-unstyled">
-                    <li className="menu-item">
+                    <li className="menu-item wow fadeInUp animated" data-wow-duration="1000ms" data-wow-delay="600ms">
                       <a
                         href="https://alexandria2.live/"
                         aria-current="page"
@@ -112,7 +112,7 @@ const Footer = () => {
                         About Us
                       </a>
                     </li>
-                    <li className="menu-item">
+                    <li className="menu-item wow fadeInUp animated" data-wow-duration="1000ms" data-wow-delay="600ms">
                       <a
                         href="https://alexandria2.live/?page_id=66"
                         target="_blank"
@@ -121,7 +121,7 @@ const Footer = () => {
                         Contact Us
                       </a>
                     </li>
-                    <li className="menu-item">
+                    <li className="menu-item wow fadeInUp animated" data-wow-duration="1000ms" data-wow-delay="600ms">
                       <a
                         href="https://alexandria2.live/?page_id=71"
                         target="_blank"
@@ -130,7 +130,7 @@ const Footer = () => {
                         Libray
                       </a>
                     </li>
-                    <li className="menu-item">
+                    <li className="menu-item wow fadeInUp animated" data-wow-duration="1000ms" data-wow-delay="600ms">
                       <a
                         href="https://alexandria2.live/?page_id=71"
                         target="_blank"
@@ -145,7 +145,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="row pt-4">
+        <div className="row pt-4 wow fadeInUp animated" data-wow-duration="1000ms" data-wow-delay="600ms">
           <div className="col-md-12">
             <div className="subscribe-wrap">
               <form id="subscribe-blog" className="d-flex">

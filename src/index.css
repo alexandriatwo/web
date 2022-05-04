@@ -11,6 +11,10 @@ h6 {
   color: #19818f;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 button,
 p {
   font-family: 'Poppins', sans-serif;
@@ -31,7 +35,9 @@ i {
   margin-top: 10px;
   color: #a58243;
 }
-
+button.btn.search:focus, button.btn.search:hover {
+  color: #fff;
+}
 
 .top-bar a {
   color: #333;
@@ -39,8 +45,9 @@ i {
 }
 
 /* Topbar css */
-.header_top {
+.top-bar {
   border-top: 3px solid #19818f;
+  overflow: hidden;
 }
 
 nav .row {
@@ -73,6 +80,7 @@ nav .row {
   background-color: #19818f;
   border-bottom: 2px solid #fff;
   box-shadow: 0px 3px 5px rgb(0 0 0 / 25%);
+  overflow: hidden
 }
 
 .navbar a {
@@ -110,7 +118,7 @@ nav .row {
 
 /* banner css */
 .banner {
-  background-image: url(./assets/banner-img.jpg);
+  background-image: url(./assets/banner-img.png);
   height: 84vh;
   background-repeat: no-repeat;
   background-size: cover;
@@ -122,15 +130,17 @@ nav .row {
 .banner .heading {
   font-weight: 900;
   font-size: 3.5vw;
+  color: #fff;
 }
 
 .tagline {
   font-size: 3.5vw;
   font-weight: normal;
+  color: #fff;
 }
 
 .banner p {
-  color: #111;
+  color: #fff;
   font-size: 24px;
   font-family: 'Poppins', sans-serif;
   font-weight: normal;
@@ -177,6 +187,19 @@ nav .row {
   border-bottom: 1px solid #111;
   display: inline-block;
   margin-bottom: 20px;
+  position: relative;
+}
+
+@keyframes openclose {
+  0% {
+    text-indent: 0;
+    background-color: #000;
+  }
+
+  100% {
+    width: auto;
+    display: inline-block;
+  }
 }
 
 .rect {
@@ -192,6 +215,7 @@ nav .row {
   border: 1px solid #19818f;
   left: -7px;
   top: -5px;
+  animation: pulse 2s infinite;
 }
 
 .heading-text.first-text {
@@ -212,6 +236,7 @@ nav .row {
   background-image: url(../src/assets/Future-bg.png);
   background-size: cover;
   background-repeat: no-repeat;
+  overflow: hidden;
 }
 
 .future-wrap {
@@ -232,6 +257,11 @@ nav .row {
   font-family: 'Poppins', sans-serif;
   font-size: 24px;
   font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.site-social-menu {
+  margin-bottom: 40px;
 }
 
 footer .menu-item a {
@@ -251,8 +281,9 @@ footer .menu-item a {
 .postlist-title {
   font-size: 15px;
   font-family: 'Poppins', sans-serif;
-  font-weight: 600;
+  font-weight: 500;
   margin-bottom: 0;
+  line-height: 20px;
 }
 
 .postlist-title a {
@@ -260,7 +291,7 @@ footer .menu-item a {
 }
 
 .postlist-date {
-  font-size: 14px;
+  font-size: 13px;
   opacity: 0.6;
   font-family: 'Poppins', sans-serif;
 }
@@ -467,8 +498,34 @@ footer.p-80 {
   .top-bar .d-flex.align-items-center {
     text-align: center;
   }
-  ul.header-info{
+
+  ul.header-info {
     justify-content: space-evenly !important;
     margin-bottom: 10px !important;
   }
 }
+
+
+/* .banner .heading {
+  animation: animated-text 4s steps(29,end) 1s 1 normal both,
+             animated-cursor 600ms steps(29,end) infinite;
+             
+}
+.banner .heading {
+white-space: nowrap;
+  overflow: hidden;
+}
+
+/* text animation */
+
+/* @keyframes animated-text{
+  from{width: 0;}
+  to{width: 500px;}
+}
+
+/* cursor animations */
+
+/* @keyframes animated-cursor{
+  from{border-right-color: rgba(0,255,0,.75);}
+  to{border-right-color: transparent;}
+} */

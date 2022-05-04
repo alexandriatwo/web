@@ -13,7 +13,7 @@ const Header = () => {
       <div className="header_top">
         <div className="top-bar">
           <div className="container">
-            <div className="row d-flex align-items-center">
+            <div className="row d-flex align-items-center wow fadeInUp animated" data-wow-duration="1000ms" data-wow-delay="600ms">
               <div className="col-sm-2">
                 <a className="brand" href="Home.html">
                   <img src={logo} className="img-responsive" alt="logo" />
@@ -36,7 +36,7 @@ const Header = () => {
         </div>
 
         <nav className="navbar navbar-expand-lg">
-          <div className="container">
+          <div className="container wow fadeInUp animated" data-wow-duration="1000ms" data-wow-delay="600ms">
             <div className="col-md-7">
               <button
                 class="navbar-toggler collapsed"
